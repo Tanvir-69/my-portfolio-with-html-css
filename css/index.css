@@ -1,0 +1,16 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* utilities */
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
