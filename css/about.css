@@ -1,0 +1,37 @@
+#about-info {
+  margin-bottom: 4rem;
+}
+
+#about-info .aboutcontent {
+  width: 70%;
+  float: left;
+}
+
+#about-info img {
+  float: right;
+  width: 20%;
+  border-radius: 5px;
+}
+
+#about-info .aboutcontentcontainer {
+  padding: 20px;
+}
+#about-info .aboutcontentcontainer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* testimonials section */
+
+#testimonials .testimonial {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#testimonials .testimonial img {
+  float: left;
+  width: 95px;
+  height: 90px;
+  border-radius: 5px;
+  margin-right: 15px;
+}

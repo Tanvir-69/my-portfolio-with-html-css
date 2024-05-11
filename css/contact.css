@@ -1,0 +1,42 @@
+#contact-form-info {
+  margin-bottom: 20px;
+}
+#contact-form-info .card {
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 40px;
+}
+#contact-form-info p {
+  text-align: center;
+  font-size: 20px;
+}
+#contact-form-info .form-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+#contact-form-info .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+#contact-form-info .form-area {
+  width: 100%;
+  height: 100px;
+  border: 1px #ddd solid;
+}
+#contact-form-info .btn {
+  padding: 10px;
+  border: none;
+  width: 20%;
+}
+#contact-form-info input:focus,
+#contact-form-info textarea:focus {
+  outline: none;
+  border-color: #0ba09a;
+}
+#contact-form-info .btn-center {
+  text-align: center;
+  margin-bottom: 0;
+}

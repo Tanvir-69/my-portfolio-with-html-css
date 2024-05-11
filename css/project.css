@@ -1,0 +1,20 @@
+/*  */
+
+#project-info .container h1 {
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+#project-info img {
+  width: 100%;
+}
+#project-info .left {
+  float: left;
+  margin-right: 20px;
+}
+#project-info .card {
+  margin-bottom: 30px;
+}
+#project-info a {
+  text-decoration: none;
+}
