@@ -8,13 +8,20 @@
 #project-info img {
   width: 100%;
 }
-#project-info .left {
+
+#project-info .cardcontainer {
+  width: 50%;
+  padding: 20px;
   float: left;
-  margin-right: 20px;
 }
-#project-info .card {
-  margin-bottom: 30px;
-}
+
 #project-info a {
   text-decoration: none;
+}
+
+/* media query */
+@media (max-width: 768px) {
+  #project-info .cardcontainer {
+    width: 100%;
+  }
 }

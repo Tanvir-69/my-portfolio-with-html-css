@@ -20,7 +20,7 @@ p {
 
 /* utilities */
 .card {
-  width: 48%;
+  /* width: 50%; */
   background: #e2e7e7;
   border: none;
   border-radius: 5px;
