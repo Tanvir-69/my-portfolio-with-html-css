@@ -14,6 +14,7 @@
     <title>Tanvir's Portfolio | Contact</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -25,82 +26,193 @@
   <body>
     <!-- header section -->
     <header>
-      <nav id="navbar">
-        <div class="container">
-          <div class="logoContainer">
-            <a href="./index.html"
-              ><img
-                src="./img/logo.png"
-                alt="tanvir's portfolio logo"
-                class="logo"
-            /></a>
-          </div>
-          <div class="navLink">
-            <ul>
-              <li>
-                <a href="./index.html"
-                  ><i class="fa-solid fa-house"></i> Home</a
-                >
-              </li>
-              <li>
-                <a href="./project.html"
-                  ><i class="fa-solid fa-copyright"></i> Project</a
-                >
-              </li>
-              <li>
-                <a href="./about.html"
-                  ><i class="fa-solid fa-address-card"></i> About</a
-                >
-              </li>
-            </ul>
-          </div>
+      <nav id="navbar" class="navbar top">
+        <div class="logoContainer">
+          <a href="./index.html"
+            ><img
+              src="./img/logo.png"
+              alt="tanvir's portfolio logo"
+              class="logo"
+          /></a>
+        </div>
+        <div id="link" class="navLink">
+          <ul>
+            <li>
+              <a href="index.html#home"
+                ><i class="fa-solid fa-house"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="index.html#services"
+                ><i class="fa-brands fa-servicestack"></i> Services</a
+              >
+            </li>
+            <li>
+              <a href="index.html#project"
+                ><i class="fa-solid fa-copyright"></i> Project</a
+              >
+            </li>
+            <li>
+              <a href="index.html#blog"
+                ><i class="fa-solid fa-blog"></i> Blogs</a
+              >
+            </li>
+            <li>
+              <a href="#client"><i class="fa-solid fa-copyright"></i> Review</a>
+            </li>
+            <li>
+              <a href="./about.html"
+                ><i class="fa-solid fa-address-card"></i> About</a
+              >
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
-    <div class="clr"></div>
     <!-- body section -->
-    <section id="contact-form-info">
-      <div class="container">
-        <form action="">
-          <div class="card">
-            <p class="text-secondary">Feel free to contact me</p>
-            <div class="mb-1">
-              <label for="fullname" class="form-label">Full Name</label>
-              <input
-                name="fullname"
-                class="form-control"
-                placeholder="enter your full name"
-              />
+    <section id="contact" class="mt-1">
+      <div class="contact-container">
+        <div class="contact-item">
+          <h1>
+            <span class="text-secondary">Let's </span>talk about your
+            <span class="text-secondary">idea</span>
+          </h1>
+          <div class="social-link">
+            <div class="social-link-item">
+              <h3>My social networks:</h3>
+              <div class="">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
             </div>
-            <div class="mb-1">
-              <label for="email" class="form-label">Email</label>
-              <input
-                name="email"
-                class="form-control"
-                placeholder="enter your email"
-              />
+            <div class="social-link-item">
+              <h3>Contact me with:</h3>
+              <div class="">
+                <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+              </div>
             </div>
-            <div class="mb-1">
-              <label for="message" class="form-label">Message</label>
-              <textarea name="message" class="form-area"></textarea>
-            </div>
-
-            <div class="mb-1 btn-center">
-              <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="social-link-item">
+              <h3>Visit my website:</h3>
+              <div class="">
+                <a href="#">https://www.tanvirulhasan.com</a>
+              </div>
             </div>
           </div>
-        </form>
+        </div>
+        <div class="contact-item">
+          <form action="">
+            <div class="mb-1">
+              <label for="name">Your Name</label>
+              <input type="text" name="name" placeholder="full name" />
+            </div>
+            <div class="mb-1">
+              <label for="email">Your Email</label>
+              <input type="email" name="email" placeholder="valid email" />
+            </div>
+            <div class="mb-1">
+              <label for="name">Topic/Type of project</label>
+              <input type="text" name="name" placeholder="" />
+            </div>
+            <div class="mb-1">
+              <label for="name">Your Message</label>
+              <textarea
+                name="name"
+                id="name"
+                placeholder="your text here.."
+              ></textarea>
+            </div>
+            <div class="mb-1">
+              <input class="input-btn" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
       </div>
     </section>
+
     <!-- footer section -->
-    <div class="clr"></div>
-    <footer id="main-footer">
-      <div class="container">
-        <p>
-          <span class="text-secondary">Tanvir's Portfolio</span> &copy; All
-          Rights Reserved
-        </p>
+    <footer id="footer">
+      <div class="footer-container">
+        <h1 class="footer-title">Contact me for more!</h1>
+        <div class="footer-btn-container">
+          <a href="#" class="footer-btn"
+            >tanvirulhasan.com <i class="fas fa-square-up-right"></i
+          ></a>
+        </div>
+        <div class="footer-grid">
+          <div class="footer-item">
+            <img src="img/logo.png" class="footer-logo" alt="" />
+            <div>
+              <p>2024 &copy; - Made by Tanvirul</p>
+              <p>All rights reserved</p>
+              <div class="policy-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2>Links</h2>
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="index.html#home"
+                    ><i class="fa-solid fa-house"></i> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#services"
+                    ><i class="fa-brands fa-servicestack"></i> Services</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#project"
+                    ><i class="fa-solid fa-copyright"></i> Projects</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#blog"
+                    ><i class="fa-solid fa-copyright"></i> Blog</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><i class="fa-solid fa-address-book"></i> Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2>Social networks</h2>
+            <div class="social">
+              <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+              <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+              <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2>Contact</h2>
+            <div>
+              <a href="#"
+                ><i class="fa-solid fa-envelope"></i> tanvirhasan00@gmail.com</a
+              >
+            </div>
+            <div>
+              <a href="#"
+                ><i class="fa-brands fa-whatsapp"></i> +880-1970806028</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

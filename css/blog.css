@@ -1,0 +1,13 @@
+#blog h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+#blog .section-grid {
+  row-gap: 30px;
+}
+#blog h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 5rem;
+}

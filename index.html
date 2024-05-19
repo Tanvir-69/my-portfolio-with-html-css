@@ -13,6 +13,7 @@
     />
     <title>Tanvir's Portfolio | Home</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -21,47 +22,57 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body id="home">
     <!-- header section -->
-
     <header>
-      <nav id="navbar">
-        <div class="container">
-          <div class="logoContainer">
-            <a href="./index.html"
-              ><img
-                src="./img/logo.png"
-                alt="tanvir's portfolio logo"
-                class="logo"
-            /></a>
-          </div>
-          <div class="navLink">
-            <ul>
-              <li>
-                <a class="active" href="./index.html"
-                  ><i class="fa-solid fa-house"></i> Home</a
-                >
-              </li>
-              <li>
-                <a href="./project.html"
-                  ><i class="fa-solid fa-copyright"></i> Project</a
-                >
-              </li>
-              <li>
-                <a href="./about.html"
-                  ><i class="fa-solid fa-address-card"></i> About</a
-                >
-              </li>
-            </ul>
-          </div>
+      <nav id="navbar" class="navbar top">
+        <div class="logoContainer">
+          <a href="./index.html"
+            ><img
+              src="./img/logo.png"
+              alt="tanvir's portfolio logo"
+              class="logo"
+          /></a>
+        </div>
+        <div id="link" class="navLink">
+          <ul>
+            <li>
+              <a class="active" href="#home"
+                ><i class="fa-solid fa-house"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="#services"
+                ><i class="fa-brands fa-servicestack"></i> Services</a
+              >
+            </li>
+            <li>
+              <a href="#project"
+                ><i class="fa-solid fa-copyright"></i> Project</a
+              >
+            </li>
+            <li>
+              <a href="#blog"><i class="fa-solid fa-blog"></i> Blogs</a>
+            </li>
+            <li>
+              <a href="#client"><i class="fa-solid fa-copyright"></i> Review</a>
+            </li>
+            <li>
+              <a href="./about.html"
+                ><i class="fa-solid fa-address-card"></i> About</a
+              >
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
-    <div class="clr"></div>
-    <!-- body section -->
-    <section id="home-info">
-      <div class="container">
-        <img src="./img/tanvir.jpeg" alt="home image" />
+
+    <!-- showcase section -->
+    <section id="home" class="container">
+      <div class="home-container">
+        <div class="image-container">
+          <!-- <img src="./img/tanvir1.JPG" alt="home image" /> -->
+        </div>
         <div class="home-info-content">
           <h1>
             <span class="text-primary">Hi</span>, I AM!
@@ -74,23 +85,246 @@
             vel mollitia. Quos! amet consectetur adipisicing elit. Quisquam
             quibusdam minima soluta vel mollitia. Quos!
           </p>
+          <div class="btn-group">
+            <a href="#" class="btn btn-primary">Download CV</a>
+            <a href="contact.html" class="btn btn-dark">Get in Touch</a>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="#" class="btn btn-primary">Download CV</a>
-          <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </section>
+    <!-- About section -->
+    <section id="services" class="icons p-1">
+      <h1 class="text-secondary">Services</h1>
+      <div class="flex-items">
+        <div>
+          <i class="fas fa-code fa-2x"></i>
+          <div>
+            <h3>Web Development</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Doloremque et aspernatur voluptatibus officiis, sit consequuntur.
+            </p>
+          </div>
+        </div>
+        <div>
+          <i class="fas fa-mobile fa-2x"></i>
+          <div>
+            <h3>Mobile App Development</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Doloremque et aspernatur voluptatibus officiis, sit consequuntur.
+            </p>
+          </div>
+        </div>
+        <div>
+          <i class="fas fa-database fa-2x"></i>
+          <div>
+            <h3>Back-end Development</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Doloremque et aspernatur voluptatibus officiis, sit consequuntur.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="clr"></div>
+    <!-- project section -->
+    <section id="project" class="section-container p-1">
+      <h1 class="text-secondary">Projects</h1>
+      <a href="project.html" class="s-btn text-secondary"
+        >More <i class="fas fa-arrow-right"></i
+      ></a>
+      <div class="section-grid">
+        <div class="section-item">
+          <img class="section-img" src="./img/hotel-bt.png" alt="" />
+          <h3 class="item-title">Lorem ipsum dolor sit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+            repellat ullam beatae porro nihil neque cumque illum quidem voluptas
+            illo.
+          </p>
+          <a href="#" class="s-i-btn">
+            Read more <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="section-item">
+          <img class="section-img" src="./img/hotel-bt.png" alt="" />
+          <h3 class="item-title">Lorem ipsum dolor sit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+            repellat ullam beatae porro nihil neque cumque illum quidem voluptas
+            illo.
+          </p>
+          <a href="#" class="s-i-btn">
+            Read more <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="section-item">
+          <img class="section-img" src="./img/hotel-bt.png" alt="" />
+          <h3 class="item-title">Lorem ipsum dolor sit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+            repellat ullam beatae porro nihil neque cumque illum quidem voluptas
+            illo.
+          </p>
+          <a href="#" class="s-i-btn">
+            Read more <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog section -->
+    <section id="blog" class="section-container p-1">
+      <h1 class="text-secondary">Blogs</h1>
+      <a href="blog.html" class="s-btn text-secondary"
+        >More <i class="fas fa-arrow-right"></i
+      ></a>
+      <div class="section-grid">
+        <div class="section-item">
+          <img class="section-img" src="./img/hotel-bt.png" alt="" />
+          <h3 class="item-title">Lorem ipsum dolor sit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+            repellat ullam beatae porro nihil neque cumque illum quidem voluptas
+            illo.
+          </p>
+          <a href="#" class="s-i-btn">
+            Read more <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="section-item">
+          <img class="section-img" src="./img/hotel-bt.png" alt="" />
+          <h3 class="item-title">Lorem ipsum dolor sit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+            repellat ullam beatae porro nihil neque cumque illum quidem voluptas
+            illo.
+          </p>
+          <a href="#" class="s-i-btn">
+            Read more <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="section-item">
+          <img class="section-img" src="./img/hotel-bt.png" alt="" />
+          <h3 class="item-title">Lorem ipsum dolor sit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+            repellat ullam beatae porro nihil neque cumque illum quidem voluptas
+            illo.
+          </p>
+          <a href="#" class="s-i-btn">
+            Read more <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section id="client" class="p-1">
+      <div class="client-container"></div>
+    </section>
+
     <!-- footer section -->
-    <footer id="main-footer">
-      <div class="container">
-        <p>
-          <span class="text-secondary">Tanvir's Portfolio</span> &copy; All
-          Rights Reserved
-        </p>
+    <footer id="footer">
+      <div class="footer-container">
+        <h1 class="footer-title">Contact me for more!</h1>
+        <div class="footer-btn-container">
+          <a href="#" class="footer-btn"
+            >tanvirulhasan.com <i class="fas fa-square-up-right"></i
+          ></a>
+        </div>
+        <div class="footer-grid">
+          <div class="footer-item">
+            <img src="img/logo.png" class="footer-logo" alt="" />
+            <div>
+              <p>2024 &copy; - Made by Tanvirul</p>
+              <p>All rights reserved</p>
+              <div class="policy-link">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2>Links</h2>
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li>
+                  <a href="#services"
+                    ><i class="fa-brands fa-servicestack"></i> Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#project"
+                    ><i class="fa-solid fa-copyright"></i> Projects</a
+                  >
+                </li>
+                <li>
+                  <a href="#blog"><i class="fa-solid fa-blog"></i> Blog</a>
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><i class="fa-solid fa-address-book"></i> Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2>Social networks</h2>
+            <div class="social">
+              <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+              <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+              <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2>Contact</h2>
+            <div>
+              <a href="#"
+                ><i class="fa-solid fa-envelope"></i> tanvirhasan00@gmail.com</a
+              >
+            </div>
+            <div>
+              <a href="#"
+                ><i class="fa-brands fa-whatsapp"></i> +880-1970806028</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <!-- Script start -->
+    <script src="./js/main.js"></script>
+    <!-- // JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Smooth Scrolling
+      $("#navbar a, .btn").on("click", function (e) {
+        if (this.hash !== "") {
+          e.preventDefault();
+          const hash = this.hash;
+          $("html,body").animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+    </script>
+    <!-- JQuery end -->
+    <!-- Script end -->
   </body>
 </html>
